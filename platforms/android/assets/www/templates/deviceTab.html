@@ -1,0 +1,11 @@
+<ion-view title="DeviceTab" id="page2">
+    <ion-content padding="true" class="has-header">
+        <ion-list ng-controller="deviceListCtrl" show-delete="shouldShowDelete"
+          show-reorder="shouldShowReorder"
+          can-swipe="listCanSwipe">
+        	<ion-item ng-repeat="task in tasks" class="item-thumbnail-left">
+		    	<p>{{task.title}}</p>
+		    </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

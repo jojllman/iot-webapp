@@ -27,12 +27,15 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("pause", this.onPause, false);
+        document.addEventListener("resume", this.onResume, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        console.log(device.cordova);
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -45,6 +48,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    onPause: function() {
+        console.log('onPause');
+    },
+
+    onResume: function() {
+        console.log('onResume');
     }
 };
 
