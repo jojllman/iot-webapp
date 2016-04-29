@@ -1,0 +1,474 @@
+[0425/171502:ERROR:process_info.cc(330)] VirtualQueryEx: 存取被拒。 (0x5)
+[0425/171502:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[0425/171502:ERROR:process_info.cc(608)] range at 0xecf0822000, size 0x354 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1d5200, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef42b0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef2c18, size 0x76 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef2c7a, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4130, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4030, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1a1410, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4800, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4980, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef49a8, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4cd0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4e50, size 0x44 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef4e78, size 0x1c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef68b0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6a30, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6a58, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6c50, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6dd0, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6df8, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef6ff0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7170, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7198, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7380, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7500, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7528, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7eb0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef8030, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef8058, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef8290, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef0720, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef0748, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef66d0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefb9b0, size 0x9a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefba2e, size 0x1c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7760, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdbe0, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdc08, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef79d0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdd60, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdd88, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eef7c40, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefce40, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefce68, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefaa70, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcb70, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcb98, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdf80, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefce90, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefceb8, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefac80, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcd50, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcd78, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe520, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcee0, size 0x42 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcf08, size 0x1a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe640, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefc7b0, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefc7d8, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe1c0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefc800, size 0x42 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefc828, size 0x1a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe0a0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefb090, size 0x50 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefb0b8, size 0x28 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe760, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcc60, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefcc88, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefebe0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdb30, size 0x58 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefdb6e, size 0x1a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefeac0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefb330, size 0x56 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefb36e, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefed00, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06fc0, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06fe8, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe880, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef075b0, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef075d8, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe9a0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0e6e0, size 0x4e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0e708, size 0x26 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6eefe2e0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef067a0, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef067c8, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11d30, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef07060, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef07088, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11e50, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0eaa0, size 0x4c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0eac8, size 0x24 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef122d0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06c00, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06c28, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11430, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06840, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef06868, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11c10, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0c540, size 0x9e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0c5be, size 0x20 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef123f0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b310, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b338, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12f30, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b3b0, size 0x46 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b3d8, size 0x1e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11310, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b400, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b428, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12cf0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b450, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0b478, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11550, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef109c0, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef109e8, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11670, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10150, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10178, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11790, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef106f0, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10718, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11af0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10dd0, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10df8, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef118b0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10bf0, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10c18, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12090, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10b00, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10b28, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12990, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef1d6e0, size 0xf2 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef1d7ba, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef111f0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10600, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10628, size 0x18 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12870, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10290, size 0x3a fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef102b8, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef11f70, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0ff20, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef0ff48, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef119d0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10e20, size 0x3c fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10e48, size 0x14 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12bd0, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef104c0, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef104e8, size 0x16 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef12510, size 0x84 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10740, size 0x3e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x26b6ef10768, size 0x16 fully unreadable
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6ef12630 of 132 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6eef42b0 of 132 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6eef4130 of 132 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6eef2600 of 1004 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_snapshot_win.cc(302)] ReadMemory RTL_USER_PROCESS_PARAMETERS
+[0425/171502:ERROR:process_reader_win.cc(98)] process 24000 not found
+[0425/171502:ERROR:process_info.cc(330)] VirtualQueryEx: 存取被拒。 (0x5)
+[0425/171502:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1d5200, size 0x40 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1a1410, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1a1410, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1a1410, size 0x12 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0xac543fae00000000, size 0x132 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0xac54401000000000, size 0x132 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x0, size 0x132 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0xa01f3fc000000000, size 0x25e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0xa01f402200000000, size 0x25e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x0, size 0x25e fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1d21e0, size 0x28 fully unreadable
+[0425/171502:ERROR:process_info.cc(608)] range at 0x7ffeab1d2d48, size 0x30 fully unreadable
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b070000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeab090000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\ntdll.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8110000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\KERNELBASE.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8ec0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\KERNEL32.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea9690000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\msvcrt.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea89d0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\RPCRT4.dll
+[0425/171502:ERROR:process_reader_win.cc(141)] SuspendThread: 存取被拒。 (0x5)
+[0425/171502:ERROR:process_reader_win.cc(141)] SuspendThread: 存取被拒。 (0x5)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaaed0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\sechost.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8920000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b070000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\ADVAPI32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b070000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe99a80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_elf.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5560000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea38a0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe99a80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8300000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_elf.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\cfgmgr32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8110000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4ed0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5560000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\KERNELBASE.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8d30000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\GDI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea38a0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8ec0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\KERNEL32.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaaf30000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\USER32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea9690000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\msvcrt.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4ed0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea84f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\IMM32.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea89d0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\RPCRT4.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4f00000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaaed0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\sechost.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4f00000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\profapi.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8920000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\ADVAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6e10000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe99a80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_elf.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5220000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WTSAPI32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\profapi.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5560000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8420000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\bcryptPrimitives.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea38a0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6e10000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7150000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8300000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\cfgmgr32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5220000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\PSAPI.DLL
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WTSAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4ed0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe986f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\MacType\EasyHK64.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8d30000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\GDI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x180000000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\MacType\MacType64.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaaf30000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\USER32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8fe0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\combase.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea84f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\IMM32.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8f70000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shlwapi.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4f00000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7730000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\kernel.appcore.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\profapi.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7740000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shcore.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6e10000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea76b0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\powrprof.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5220000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WTSAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6f580000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\windows.storage.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8420000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea9900000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\bcryptPrimitives.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\SHELL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea75e0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7150000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\bcrypt.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea3090000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\PSAPI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe986f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f420000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\MacType\EasyHK64.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7860000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8fe0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\FirewallAPI.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\combase.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6530000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8f70000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\fwbase.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shlwapi.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7730000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8400000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\kernel.appcore.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\NETAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7740000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4fc0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shcore.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\DAVHLPR.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8af0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea76b0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\COMDLG32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\powrprof.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8710000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x132aca50000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\ole32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\windows.storage.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x26b6ff10000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea9900000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\OLEAUT32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\SHELL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5880000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea75e0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\bcrypt.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaae60000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea3090000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WS2_32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9de80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f420000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USP10.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7720000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7860000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\MSASN1.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\FirewallAPI.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea78f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6530000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\CRYPT32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\fwbase.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7800000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8400000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WINTRUST.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\NETAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5630000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4fc0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\DAVHLPR.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7330000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8af0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\COMDLG32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8710000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe7ba90000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\ole32.dll
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_child.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x132ad3e0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\OLEAUT32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f8f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\dwrite.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5880000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b136a78 of 12 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:process_snapshot_win.cc(89)] ReadMemory ExceptionInformation failed
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaae60000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WS2_32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9de80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USP10.dll
+[0425/171502:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7720000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\MSASN1.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea78f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\CRYPT32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7800000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WINTRUST.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5630000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7330000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe7ba90000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_child.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f8f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\dwrite.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b136a78 of 12 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:process_snapshot_win.cc(89)] ReadMemory ExceptionInformation failed
+[0425/171502:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0425/171502:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea847e620 of 45 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(154)] could not read debug directory from C:\WINDOWS\system32\bcryptPrimitives.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7150000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8700000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\PSAPI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe986f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\MacType\EasyHK64.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x180000000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\MacType\MacType64.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8fe0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\combase.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8f70000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shlwapi.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7730000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\kernel.appcore.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7740000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\shcore.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea76b0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\powrprof.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x25ea0800000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\windows.storage.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea9900000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\SHELL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea75e0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\bcrypt.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea3090000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f420000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7860000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\FirewallAPI.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea6530000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\fwbase.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8400000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\NETAPI32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea4fc0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\DAVHLPR.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8af0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\COMDLG32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea8710000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\ole32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x25ea1190000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\OLEAUT32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5880000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffeaae60000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WS2_32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9de80000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\USP10.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7720000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\MSASN1.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea78f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\CRYPT32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7800000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\system32\WINTRUST.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea5630000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffea7330000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe7ba90000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\49.0.2623.112\chrome_child.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffe9f8f0000 of 64 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:pe_image_reader.cc(280)] could not read dos header from C:\WINDOWS\SYSTEM32\dwrite.dll
+[0425/171502:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ff70b136a78 of 12 bytes failed: 僅完成部分的 ReadProcessMemory 或 WriteProcessMemory 要求。 (0x12B)
+[0425/171502:WARNING:process_snapshot_win.cc(89)] ReadMemory ExceptionInformation failed
+[0425/171502:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0425/171502:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558

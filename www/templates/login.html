@@ -4,15 +4,19 @@
             <ion-list>
                 <label class="item item-input">
                     <span class="input-label">Username</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" ng-model="user.username">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Password</span>
-                    <input type="password" placeholder="">
+                    <input type="password" placeholder="" ng-model="user.password">
                 </label>
             </ion-list>
             <div class="spacer" style="height: 40px;"></div>
-            <a ui-sref="tabsController.deviceTab" id="login-button1" class="button button-stable  button-block">Log in</a>
+            <div ng-controller="loginCtrl">
+                <div ng-click="login(user)" id="login-button1" class="button button-stable  button-block">
+                    Log in
+                </div>
+            </div>
         </form>
     </ion-content>
 </ion-view>
