@@ -80,7 +80,7 @@ angular.module('app.services', [])
 	        })
 	        .then(function successCallback(response) {
 			    gateway.users = response.data.users;
-
+			    $rootScope.$broadcast('scroll.refreshComplete');
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.
@@ -227,6 +227,34 @@ angular.module('app.services', [])
 	        })
 	        .then(function successCallback(response) {
 			    gateway.events.push(event);
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.addUser = function(username, password) {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'POST',
+	            url: URL + 'add-user',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				},
+				transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data: {
+					user_name: username,
+					password: password
+				}
+	        })
+	        .then(function successCallback(response) {
+			    gateway.queryUserList();
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.

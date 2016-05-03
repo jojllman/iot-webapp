@@ -109,12 +109,6 @@ angular.module('app.controllers', [])
 	$scope.conditions = [];
 	$scope.execs = [];
 
-	$scope.onIfDeviceChange = function(selectedDevice) {
-	    console.log(selectedDevice);
-	}; 
-	$scope.onIfDeviceChange = function(selectedDevice) {
-	    console.log(selectedDevice);
-	}; 
 	$scope.addIfCondition = function(device, channel, operator, value) {
 		var condition = {};
 		condition.device = device;
@@ -220,8 +214,52 @@ angular.module('app.controllers', [])
 	};
 })
    
-.controller('userManagementTabCtrl', function($scope) {
+.controller('userManagementTabCtrl', function($scope, $ionicModal, GatewayFactory) {
+	$scope.shouldShowDelete = false;
+	$scope.shouldShowReorder = false;
+	$scope.listCanSwipe = true;
+	$scope.users = GatewayFactory.users;
 
+	$ionicModal.fromTemplateUrl('templates/newUserModal.html', function(modal) {
+    	$scope.modal = modal;
+	  	}, {
+	    // Use our scope for the scope of the modal to keep it simple
+	    scope: $scope,
+	    // The animation we want to use for the modal entrance
+	    animation: 'slide-in-up'
+	}); 
+
+	$scope.isAdmin = function() {
+		return GatewayFactory.isAdmin();
+	};
+
+	$scope.doRefresh = function() {
+		GatewayFactory.queryUserList();
+		$scope.users = GatewayFactory.users;
+	};
+
+	$scope.newUser = function() {
+		$scope.openModal();
+	};
+	$scope.openModal = function() {
+    	$scope.modal.show();
+	};
+	$scope.closeModal = function() {
+		console.log('Modal close');
+		$scope.users = GatewayFactory.users;
+	    $scope.modal.hide();
+	}; 
+})
+
+.controller('newUserCtrl', function($scope, GatewayFactory) {
+	$scope.createUser = function(username, password, passwordCheck) {
+		if(angular.isDefined(username) && angular.isDefined(password) && angular.isDefined(passwordCheck)) {
+			if(password == passwordCheck) {
+				GatewayFactory.addUser(username, password);
+				$scope.closeModal();
+			}
+		}
+	};
 })
       
 .controller('loginCtrl', function($scope, $state, GatewayFactory, $interval, $timeout) {
@@ -236,6 +274,7 @@ angular.module('app.controllers', [])
 					else {
 						GatewayFactory.queryDeviceList();
 						GatewayFactory.queryEventList();
+						GatewayFactory.queryUserList();
 						console.log('change to tabsController.deviceTab');
 						$timeout(function() {
 							$state.go('tabsController.deviceTab');
