@@ -1,0 +1,41 @@
+<div class="modal">
+
+      <header class="bar bar-header bar-positive">
+        <h1 class="title">Set Device Owner</h1>
+        <button class="button button-clear" ng-click="closeOwnerModal()">Cancel</button>
+      </header>
+
+      <ion-content has-header="true" 
+        has-subheader="false"
+        has-footer="false"
+        overflow-scroll="true"
+        scroll="true"
+        padding="true">
+
+        <div class="spacer" style="height: 40px;"></div>
+        <div class="list">
+				<label class="item item-input item-select">
+				    <div class="input-label">
+				      Choose group:
+				    </div>
+				    <select ng-options="group as group.group_name for group in groups" ng-model="selectedGroup">
+				    </select>
+				  </label>
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Owner:
+            </div>
+            <select ng-options="user as user.user_name for user in selectedGroup.users" ng-model="selectedUser">
+            </select>
+          </label>
+			  <label class="item item-divider item-stacked-label">
+				  <div class="wrapper" style="text-align: center;">
+			          <button class="button button-balanced" ng-click="setDeviceOwner(selectedUser);">Set</button>
+			      </div>
+		      </label>
+        </div>        
+        
+
+      </ion-content>
+
+    </div>

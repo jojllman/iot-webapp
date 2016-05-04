@@ -5,10 +5,20 @@ angular.module('app.controllers', [])
 	$scope.shouldShowReorder = false;
 	$scope.listCanSwipe = true;
 	$scope.devices = GatewayFactory.devices;
+	$scope.groups = GatewayFactory.groups;
 	console.log($scope.devices);
 
 	$ionicModal.fromTemplateUrl('templates/writeDataModal.html', function(modal) {
     	$scope.modal = modal;
+	  	}, {
+	    // Use our scope for the scope of the modal to keep it simple
+	    scope: $scope,
+	    // The animation we want to use for the modal entrance
+	    animation: 'slide-in-up'
+	}); 
+
+	$ionicModal.fromTemplateUrl('templates/setOwnerModal.html', function(modal) {
+    	$scope.ownerModal = modal;
 	  	}, {
 	    // Use our scope for the scope of the modal to keep it simple
 	    scope: $scope,
@@ -32,6 +42,11 @@ angular.module('app.controllers', [])
 		GatewayFactory.queryDeviceList();
 		$scope.devices = GatewayFactory.devices;
 	};
+	$scope.onOwnerClick = function(device) {
+		$scope.lastDevice = device;
+		console.log(device);
+		$scope.openOwnerModal();
+	};
 	$scope.onWriteClick = function(channel) {
 		$scope.lastChannel = channel;
 		console.log(channel);
@@ -46,12 +61,25 @@ angular.module('app.controllers', [])
 	$scope.closeModal = function() {
 	    $scope.modal.hide();
 	}; 
+	$scope.openOwnerModal = function() {
+    	$scope.ownerModal.show();
+	};
+	$scope.closeOwnerModal = function() {
+	    $scope.ownerModal.hide();
+	};
 	$scope.onValueEnter = function(inputValue) {
 		$scope.modal.hide();
 	    GatewayFactory.writeChannelData($scope.lastChannel, inputValue);
 	    console.log($scope.lastChannel);
 	    $scope.lastChannel = null;
 	    console.log(inputValue);
+	}; 
+	$scope.setDeviceOwner = function(user) {
+		$scope.ownerModal.hide();
+	    GatewayFactory.setDeviceOwner($scope.lastDevice, user);
+	    console.log($scope.lastDevice);
+	    $scope.lastDevice = null;
+	    console.log(user);
 	}; 
 })
    
@@ -218,7 +246,8 @@ angular.module('app.controllers', [])
 	$scope.shouldShowDelete = false;
 	$scope.shouldShowReorder = false;
 	$scope.listCanSwipe = true;
-	$scope.users = GatewayFactory.users;
+	$scope.groups = GatewayFactory.groups;
+	console.log($scope.groups);
 
 	$ionicModal.fromTemplateUrl('templates/newUserModal.html', function(modal) {
     	$scope.modal = modal;
@@ -229,13 +258,20 @@ angular.module('app.controllers', [])
 	    animation: 'slide-in-up'
 	}); 
 
-	$scope.isAdmin = function() {
-		return GatewayFactory.isAdmin();
+	$scope.shownItem = null;
+	$scope.toggleItem = function(item) {
+	    if ($scope.isItemShown(item)) {
+	      $scope.shownItem = null;
+	    } else {
+	      $scope.shownItem = item;
+	    }
+  	};
+  	$scope.isItemShown = function(item) {
+	    return $scope.shownItem === item;
 	};
-
 	$scope.doRefresh = function() {
-		GatewayFactory.queryUserList();
-		$scope.users = GatewayFactory.users;
+		GatewayFactory.queryGroupUserList();
+		$scope.groups = GatewayFactory.groups;
 	};
 
 	$scope.newUser = function() {
@@ -246,16 +282,19 @@ angular.module('app.controllers', [])
 	};
 	$scope.closeModal = function() {
 		console.log('Modal close');
-		$scope.users = GatewayFactory.users;
+		$scope.groups = GatewayFactory.groups;
 	    $scope.modal.hide();
 	}; 
 })
 
 .controller('newUserCtrl', function($scope, GatewayFactory) {
-	$scope.createUser = function(username, password, passwordCheck) {
-		if(angular.isDefined(username) && angular.isDefined(password) && angular.isDefined(passwordCheck)) {
+	$scope.createUser = function(username, password, passwordCheck, group) {
+		if(angular.isDefined(username) 
+			&& angular.isDefined(password) 
+			&& angular.isDefined(passwordCheck)
+			&& angular.isDefined(group)) {
 			if(password == passwordCheck) {
-				GatewayFactory.addUser(username, password);
+				GatewayFactory.addUser(username, password, group);
 				$scope.closeModal();
 			}
 		}
@@ -274,7 +313,7 @@ angular.module('app.controllers', [])
 					else {
 						GatewayFactory.queryDeviceList();
 						GatewayFactory.queryEventList();
-						GatewayFactory.queryUserList();
+						GatewayFactory.queryGroupUserList();
 						console.log('change to tabsController.deviceTab');
 						$timeout(function() {
 							$state.go('tabsController.deviceTab');

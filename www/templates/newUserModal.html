@@ -32,9 +32,16 @@
 				    </div>
 				    <input type="password" placeholder="Re-enter password" ng-model="passwordCheck">
 				</label>
+				<label class="item item-input item-select">
+				    <div class="input-label">
+				      Group:
+				    </div>
+				    <select ng-options="group as group.group_name for group in groups" ng-model="selectedGroup">
+				    </select>
+				  </label>
 			  <label class="item item-divider item-stacked-label">
 				  <div class="wrapper" style="text-align: center;">
-			          <button class="button button-balanced" ng-click="createUser(username, password, passwordCheck);">Create</button>
+			          <button class="button button-balanced" ng-click="createUser(username, password, passwordCheck, selectedGroup);">Create</button>
 			      </div>
 		      </label>
         </div>        

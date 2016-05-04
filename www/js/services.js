@@ -99,6 +99,26 @@ angular.module('app.services', [])
 	        })
 	        .then(function successCallback(response) {
 			    gateway.groups = response.data.groups;
+			    $rootScope.$broadcast('scroll.refreshComplete');
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.queryGroupUserList = function() {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'GET',
+	            url: URL + 'query-group-user-list',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				}
+	        })
+	        .then(function successCallback(response) {
+			    gateway.groups = response.data.groups;
+			    $rootScope.$broadcast('scroll.refreshComplete');
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.
@@ -233,7 +253,7 @@ angular.module('app.services', [])
 			});
     	}
 	};
-	gateway.addUser = function(username, password) {
+	gateway.addUser = function(username, password, group) {
 		if(gateway.isLogin() && gateway.isAdmin()) {
 			$http({
 	            method: 'POST',
@@ -250,11 +270,40 @@ angular.module('app.services', [])
 			    },
 				data: {
 					user_name: username,
-					password: password
+					password: password,
+					group_id: group
 				}
 	        })
 	        .then(function successCallback(response) {
 			    gateway.queryUserList();
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.setDeviceOwner = function(device, user) {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'POST',
+	            url: URL + 'set-device-owner',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				},
+				transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data: {
+					device_id: device.id,
+					user_id: user.user_id
+				}
+	        })
+	        .then(function successCallback(response) {
+			    gateway.queryDeviceList();
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.

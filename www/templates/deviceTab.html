@@ -14,10 +14,15 @@
 			    	<p>Description: {{device.description}}</p>
 			    	<p>Protocol: {{device.protocol}}</p>
 			    	<p>Type: {{device.type}}</p>
+			    	<p>Owner: {{device.owner}}</p>
 			    	</div>
 			    	<div style="float:right;">
 			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(device) ? 'ion-minus' : 'ion-plus'"></i>
 			    	</div>
+			    	<ion-option-button class="button-positive"
+		            	ng-click="onOwnerClick(device)">
+		            	Set Owner
+		            </ion-option-button>
 			    </ion-item>
 			    <ion-item class="item-accordion"
                     ng-repeat="channel in device.channels"

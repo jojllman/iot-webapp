@@ -10,13 +10,32 @@
         <ion-list show-delete="shouldShowDelete"
           show-reorder="shouldShowReorder"
           can-swipe="listCanSwipe">
-          	<div ng-repeat="user in users">
-	        	<ion-item class="item item-stable">
+          	<div ng-repeat="group in groups">
+	        	<ion-item class="item item-stable" ng-click="toggleItem(group)" ng-class="{active: isItemShown(group)}">
 	        		<div style="float:left">
-	        		<h2>Name: {{user.user_name}}</h2>
-	        		<h2>ID: {{user.user_id}}</h2>
+	        		<h2>Group name: {{group.group_name}}</h2>
+			    	<p>Group Id: {{group.group_id}}</p>
+			    	</div>
+			    	<div style="float:right;">
+			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(group) ? 'ion-minus' : 'ion-plus'"></i>
 			    	</div>
 			    </ion-item>
+			    <ion-item class="item-accordion"
+                    ng-repeat="user in group.users"
+                    ng-show="isItemShown(group)">
+		            <h2>Username: {{user.user_name}}</h2>
+		            <p>User Id: {{user.user_id}}</p>
+		            <ion-option-button class="button-positive"
+		            	ng-show="channel.mode.indexOf('w') > -1"
+		            	ng-click="onWriteClick(channel)">
+		            	Write
+		            </ion-option-button>
+    				<ion-option-button class="button-assertive"
+    					ng-show="channel.mode.indexOf('r') > -1"
+    					ng-click="onReadClick(channel)">
+    					Read
+    				</ion-option-button>
+		        </ion-item>
 			</div>
         </ion-list>
     </ion-content>
