@@ -15,6 +15,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
         }
     },
     "dependent_plugins": {}

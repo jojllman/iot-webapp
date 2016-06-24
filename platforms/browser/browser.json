@@ -26,6 +26,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
         }
     },
     "dependent_plugins": {},
@@ -48,6 +51,7 @@
     "plugin_metadata": {
         "cordova-plugin-console": "1.0.3",
         "cordova-plugin-device": "1.1.2",
-        "cordova-plugin-whitelist": "1.2.2"
+        "cordova-plugin-whitelist": "1.2.2",
+        "phonegap-nfc": "0.6.6"
     }
 }

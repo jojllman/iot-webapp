@@ -20,7 +20,8 @@ module.exports.metadata =
 {
     "cordova-plugin-console": "1.0.3",
     "cordova-plugin-device": "1.1.2",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "phonegap-nfc": "0.6.6"
 }
 // BOTTOM OF METADATA
 });

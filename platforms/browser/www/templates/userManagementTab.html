@@ -1,6 +1,6 @@
 <ion-view title="UserManagementTab" id="page4">
     <ion-nav-buttons side="right">
-    	<a style="color: black;" class="button button-icon icon ion-plus" ng-show="GatewayFactory.isAdmin()" ng-click="newUser()"></a> 
+    	<a style="color: black;" class="button button-icon icon ion-plus" ng-show="isAdmin()" ng-click="newGroup()"></a> 
 	</ion-nav-buttons>
     <ion-content padding="true" class="has-header">
     	<ion-refresher
@@ -19,6 +19,16 @@
 			    	<div style="float:right;">
 			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(group) ? 'ion-minus' : 'ion-plus'"></i>
 			    	</div>
+			    	<ion-option-button class="button-positive"
+		            	ng-show="isAdmin()"
+		            	ng-click="newUser()">
+		            	New user
+		            </ion-option-button>
+		            <ion-option-button class="button-assertive"
+		            	ng-show="isAdmin()"
+		            	ng-click="newUser()">
+		            	Remove group
+		            </ion-option-button>
 			    </ion-item>
 			    <ion-item class="item-accordion"
                     ng-repeat="user in group.users"
@@ -26,15 +36,10 @@
 		            <h2>Username: {{user.user_name}}</h2>
 		            <p>User Id: {{user.user_id}}</p>
 		            <ion-option-button class="button-positive"
-		            	ng-show="channel.mode.indexOf('w') > -1"
-		            	ng-click="onWriteClick(channel)">
-		            	Write
+		            	ng-show="isAdmin()"
+		            	ng-click="onRemoveClick(user)">
+		            	Remove user
 		            </ion-option-button>
-    				<ion-option-button class="button-assertive"
-    					ng-show="channel.mode.indexOf('r') > -1"
-    					ng-click="onReadClick(channel)">
-    					Read
-    				</ion-option-button>
 		        </ion-item>
 			</div>
         </ion-list>

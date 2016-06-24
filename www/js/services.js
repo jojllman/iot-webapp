@@ -2,7 +2,7 @@ angular.module('app.services', [])
 
 .factory('GatewayFactory', ['$http', '$rootScope', function($http, $rootScope){
 	$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-	var URL = 'http://140.118.126.238:6680/REST/app/gateway/';
+	var URL = 'http://192.168.1.1/REST/app/gateway/';
 	var SERVICE_KEY = 'f80ebc87-ad5c-4b29-9366-5359768df5a1';
 	var gateway = {};
 
@@ -137,7 +137,7 @@ angular.module('app.services', [])
 	        })
 	        .then(function successCallback(response) {
 	        	console.log(response.data.user_events);
-			    gateway.events = response.data.user_events[0].events;
+			    gateway.events = response.data.user_events;
 			    $rootScope.$broadcast('scroll.refreshComplete');
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
@@ -271,11 +271,38 @@ angular.module('app.services', [])
 				data: {
 					user_name: username,
 					password: password,
-					group_id: group
+					group_id: group.group_id
 				}
 	        })
 	        .then(function successCallback(response) {
-			    gateway.queryUserList();
+			    gateway.queryGroupUserList();
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.addGroup = function(groupName) {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'POST',
+	            url: URL + 'add-group',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				},
+				transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data: {
+					group_name: groupName
+				}
+	        })
+	        .then(function successCallback(response) {
+			    gateway.queryGroupUserList();
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.
@@ -304,6 +331,58 @@ angular.module('app.services', [])
 	        })
 	        .then(function successCallback(response) {
 			    gateway.queryDeviceList();
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.setDeviceGroup = function(device, group) {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'POST',
+	            url: URL + 'set-device-group',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				},
+				transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data: {
+					device_id: device.id,
+					group_id: group.group_id
+				}
+	        })
+	        .then(function successCallback(response) {
+			    gateway.queryDeviceList();
+			}, function errorCallback(response) {
+				// called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			});
+    	}
+	};
+	gateway.startNFC = function() {
+		if(gateway.isLogin() && gateway.isAdmin()) {
+			$http({
+	            method: 'GET',
+	            url: URL + 'start-nfc',
+	            headers: {
+					'service_key': SERVICE_KEY,
+					'auth_token': gateway.authToken
+				},
+				transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    }
+	        })
+	        .then(function successCallback(response) {
+			    
 			}, function errorCallback(response) {
 				// called asynchronously if an error occurs
 			    // or server returns response with an error status.

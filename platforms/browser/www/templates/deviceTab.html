@@ -1,4 +1,7 @@
 <ion-view title="DeviceTab" id="page2">
+	<ion-nav-buttons side="right">
+    	<a style="color: black;" class="button button-icon icon ion-plus" ng-click="onNFCClick()"></a> 
+	</ion-nav-buttons>
     <ion-content padding="true" class="has-header">
     	<ion-refresher
 		    pulling-text="Pull to refresh..."
@@ -15,13 +18,20 @@
 			    	<p>Protocol: {{device.protocol}}</p>
 			    	<p>Type: {{device.type}}</p>
 			    	<p>Owner: {{device.owner}}</p>
+			    	<p>Group: {{device.group}}</p>
 			    	</div>
 			    	<div style="float:right;">
 			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(device) ? 'ion-minus' : 'ion-plus'"></i>
 			    	</div>
 			    	<ion-option-button class="button-positive"
+			    		ng-show="isAdmin()"
 		            	ng-click="onOwnerClick(device)">
 		            	Set Owner
+		            </ion-option-button>
+		            <ion-option-button class="button-assertive"
+			    		ng-show="isAdmin()"
+		            	ng-click="onGroupClick(device)">
+		            	Set Group
 		            </ion-option-button>
 			    </ion-item>
 			    <ion-item class="item-accordion"

@@ -26,6 +26,24 @@ angular.module('app.controllers', [])
 	    animation: 'slide-in-up'
 	}); 
 
+	$ionicModal.fromTemplateUrl('templates/setGroupModal.html', function(modal) {
+    	$scope.groupModal = modal;
+	  	}, {
+	    // Use our scope for the scope of the modal to keep it simple
+	    scope: $scope,
+	    // The animation we want to use for the modal entrance
+	    animation: 'slide-in-up'
+	}); 
+
+	$ionicModal.fromTemplateUrl('templates/newNFCModal.html', function(modal) {
+    	$scope.nfcModal = modal;
+	  	}, {
+	    // Use our scope for the scope of the modal to keep it simple
+	    scope: $scope,
+	    // The animation we want to use for the modal entrance
+	    animation: 'slide-in-up'
+	}); 
+
 	$scope.shownItem = null;
 	$scope.toggleItem = function(item) {
 	    if ($scope.isItemShown(item)) {
@@ -40,12 +58,19 @@ angular.module('app.controllers', [])
 	$scope.doRefresh = function() {
 		$scope.shownItem = null;
 		GatewayFactory.queryDeviceList();
+		GatewayFactory.queryGroupUserList();
 		$scope.devices = GatewayFactory.devices;
+		$scope.groups = GatewayFactory.groups;
 	};
 	$scope.onOwnerClick = function(device) {
 		$scope.lastDevice = device;
 		console.log(device);
 		$scope.openOwnerModal();
+	};
+	$scope.onGroupClick = function(device) {
+		$scope.lastDevice = device;
+		console.log(device);
+		$scope.openGroupModal();
 	};
 	$scope.onWriteClick = function(channel) {
 		$scope.lastChannel = channel;
@@ -54,6 +79,9 @@ angular.module('app.controllers', [])
 	};
 	$scope.onReadClick = function(channel) {
 		GatewayFactory.readChannelData(channel);
+	};
+	$scope.onNFCClick = function() {
+		$scope.openNFCModal();
 	};
 	$scope.openModal = function() {
     	$scope.modal.show();
@@ -66,6 +94,24 @@ angular.module('app.controllers', [])
 	};
 	$scope.closeOwnerModal = function() {
 	    $scope.ownerModal.hide();
+	};
+	$scope.openGroupModal = function() {
+    	$scope.groupModal.show();
+	};
+	$scope.closeGroupModal = function() {
+	    $scope.groupModal.hide();
+	};
+	$scope.openNFCModal = function() {
+		$scope.hostname = '';
+		$scope.ssid = '';
+		$scope.password = '';
+		$scope.masterkey = '';
+    	$scope.nfcModal.show();
+	};
+	$scope.closeNFCModal = function() {
+	    $scope.nfcModal.hide();
+	    nfc.unshare( function(){ }, function(){ alert("unshare Fail."); } );
+	    nfc.removeNdefListener($scope.onNFCRead);
 	};
 	$scope.onValueEnter = function(inputValue) {
 		$scope.modal.hide();
@@ -80,7 +126,71 @@ angular.module('app.controllers', [])
 	    console.log($scope.lastDevice);
 	    $scope.lastDevice = null;
 	    console.log(user);
+	};
+	$scope.setDeviceGroup = function(group) {
+		$scope.groupModal.hide();
+	    GatewayFactory.setDeviceGroup($scope.lastDevice, group);
+	    console.log($scope.lastDevice);
+	    $scope.lastDevice = null;
+	    console.log(group);
+	};
+	$scope.isAdmin = function() {
+		return GatewayFactory.isAdmin();
 	}; 
+})
+
+.controller('newNFCCtrl', function($rootScope, $scope, GatewayFactory){
+	$scope.hostname = '';
+	$scope.ssid = '';
+	$scope.password = '';
+	$scope.masterkey = '';
+
+	$scope.onNFCRead = function(nfcEvent) {
+		alert("Read started!");
+        var tag = nfcEvent.tag,
+        ndefMessage = tag.ndefMessage;
+        payload = nfc.bytesToString(ndefMessage[0].payload).substring(3);
+        data = payload.split( "|" );
+        GatewayFactory.nfcdata = data;
+        alert("Read OK! Now touch the IoT device.");
+        $rootScope.$broadcast('nfcEvent');
+	};
+
+	$scope.$on('nfcEvent', function (event) {
+		$scope.hostname = GatewayFactory.nfcdata[0];
+		$scope.ssid = GatewayFactory.nfcdata[1];
+		$scope.password = GatewayFactory.nfcdata[2];
+		$scope.masterkey = GatewayFactory.nfcdata[3];
+		$scope.sendNFC();
+	});
+
+	$scope.$on('nfcEventClose', function (event) {
+		$scope.closeNFCModal();
+	});
+	
+	$scope.requestNFC = function() {
+	    GatewayFactory.startNFC();
+	    nfc.removeNdefListener($scope.onNFCRead);
+    	nfc.addNdefListener(
+        $scope.onNFCRead,
+        function() {}  );
+	};
+	$scope.sendNFC = function() {
+		hostname = $scope.hostname;
+		wifi_ssid = $scope.ssid;
+		wifi_pass = $scope.password;
+		master_key = $scope.masterkey;
+		data = hostname + "|" + wifi_ssid + "|" + wifi_pass + "|" + master_key ;
+		nfc.unshare( function(){ }, function(){ alert("unshare Fail."); } );
+	    var message = [
+	        ndef.textRecord(data)
+	    ];
+	    nfc.share(message, function(){
+	    	$rootScope.$broadcast('nfcEventClose');
+	    }, function(){
+	    	$rootScope.$broadcast('nfcEventClose');
+	    });
+	};
 })
    
 .controller('eventTabCtrl', function($scope, $ionicModal, GatewayFactory) {
@@ -258,6 +368,15 @@ angular.module('app.controllers', [])
 	    animation: 'slide-in-up'
 	}); 
 
+	$ionicModal.fromTemplateUrl('templates/newGroupModal.html', function(modal) {
+    	$scope.groupmodal = modal;
+	  	}, {
+	    // Use our scope for the scope of the modal to keep it simple
+	    scope: $scope,
+	    // The animation we want to use for the modal entrance
+	    animation: 'slide-in-up'
+	}); 
+
 	$scope.shownItem = null;
 	$scope.toggleItem = function(item) {
 	    if ($scope.isItemShown(item)) {
@@ -273,9 +392,15 @@ angular.module('app.controllers', [])
 		GatewayFactory.queryGroupUserList();
 		$scope.groups = GatewayFactory.groups;
 	};
+	$scope.isAdmin = function() {
+	    return GatewayFactory.isAdmin();
+  	};
 
 	$scope.newUser = function() {
 		$scope.openModal();
+	};
+	$scope.newGroup = function() {
+		$scope.openGroupModal();
 	};
 	$scope.openModal = function() {
     	$scope.modal.show();
@@ -284,6 +409,14 @@ angular.module('app.controllers', [])
 		console.log('Modal close');
 		$scope.groups = GatewayFactory.groups;
 	    $scope.modal.hide();
+	}; 
+	$scope.openGroupModal = function() {
+    	$scope.groupmodal.show();
+	};
+	$scope.closeGroupModal = function() {
+		console.log('Modal close');
+		$scope.groups = GatewayFactory.groups;
+	    $scope.groupmodal.hide();
 	}; 
 })
 
@@ -297,6 +430,15 @@ angular.module('app.controllers', [])
 				GatewayFactory.addUser(username, password, group);
 				$scope.closeModal();
 			}
+		}
+	};
+})
+
+.controller('newGroupCtrl', function($scope, GatewayFactory) {
+	$scope.createGroup = function(groupName) {
+		if(angular.isDefined(groupName)) { 
+			GatewayFactory.addGroup(groupName);
+			$scope.closeGroupModal();
 		}
 	};
 })

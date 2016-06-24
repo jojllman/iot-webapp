@@ -1,0 +1,33 @@
+<div class="modal">
+
+      <header class="bar bar-header bar-positive">
+        <h1 class="title">Input a value</h1>
+        <button class="button button-clear" ng-click="closeModal()">Cancel</button>
+      </header>
+
+      <content has-header="true" 
+        has-subheader="false"
+        has-footer="false"
+        overflow-scroll="true"
+        scroll="true"
+        padding="true">
+
+        <div class="spacer" style="height: 40px;"></div>
+        <div class="list">
+	          <label class="item item-input item-stacked-label">
+	            <span class="input-label">Type:</span>
+	            <input type="text" value="{{lastChannel.type}}" disabled>
+	          </label>
+	          <label class="item item-input item-stacked-label">
+	            <span class="input-label">Value:</span>
+	            <input type="text" placeholder="Type here" ng-model="inputValue">
+	          </label>
+	          <br/>
+	          <div class="wrapper" style="text-align: center;">
+	          	<button class="button button-balanced" ng-click="onValueEnter(inputValue);">Enter</button>
+	          </div>
+        </div>        
+
+      </content>
+
+    </div>

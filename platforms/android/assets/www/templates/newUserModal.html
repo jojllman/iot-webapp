@@ -1,0 +1,52 @@
+<div class="modal" ng-controller="newUserCtrl">
+
+      <header class="bar bar-header bar-positive">
+        <h1 class="title">New user</h1>
+        <button class="button button-clear" ng-click="closeModal()">Cancel</button>
+      </header>
+
+      <ion-content has-header="true" 
+        has-subheader="false"
+        has-footer="false"
+        overflow-scroll="true"
+        scroll="true"
+        padding="true">
+
+        <div class="spacer" style="height: 40px;"></div>
+        <div class="list">
+				<label class="item item-input">
+					<div class="input-label">
+				      Username:
+				    </div>
+				    <input type="text" placeholder="Enter username" ng-model="username">
+				</label>
+				<label class="item item-input">
+					<div class="input-label">
+				      Password:
+				    </div>
+				    <input type="password" placeholder="Enter password" ng-model="password">
+				</label>
+				<label class="item item-input">
+					<div class="input-label">
+				      Password Check:
+				    </div>
+				    <input type="password" placeholder="Re-enter password" ng-model="passwordCheck">
+				</label>
+				<label class="item item-input item-select">
+				    <div class="input-label">
+				      Group:
+				    </div>
+				    <select ng-options="group as group.group_name for group in groups" ng-model="selectedGroup">
+				    </select>
+				  </label>
+			  <label class="item item-divider item-stacked-label">
+				  <div class="wrapper" style="text-align: center;">
+			          <button class="button button-balanced" ng-click="createUser(username, password, passwordCheck, selectedGroup);">Create</button>
+			      </div>
+		      </label>
+        </div>        
+        
+
+      </ion-content>
+
+    </div>

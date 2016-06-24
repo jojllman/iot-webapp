@@ -15,6 +15,24 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NfcPlugin\"><param name=\"android-package\" value=\"com.chariotsolutions.nfc.plugin.NfcPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.NFC\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.nfc\" android:required=\"false\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -30,6 +48,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "edu.connectivitylab.jojllman.iotwebapp"
         }
     },
     "dependent_plugins": {},
@@ -40,11 +61,17 @@
             "clobbers": [
                 "device"
             ]
+        },
+        {
+            "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
+            "id": "phonegap-nfc.NFC",
+            "runs": true
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.2",
         "cordova-plugin-device": "1.1.2",
-        "cordova-plugin-console": "1.0.3"
+        "cordova-plugin-console": "1.0.3",
+        "phonegap-nfc": "0.6.6"
     }
 }

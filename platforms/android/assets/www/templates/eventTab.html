@@ -1,3 +1,32 @@
 <ion-view title="EventTab" id="page3">
-    <ion-content padding="true" class="has-header"></ion-content>
+	<ion-nav-buttons side="right">
+    	<a style="color: black;" class="button button-icon icon ion-plus" ng-click="newEvent()"></a> 
+	</ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+    	<ion-refresher
+		    pulling-text="Pull to refresh..."
+		    on-refresh="doRefresh()">
+		</ion-refresher>
+        <ion-list show-delete="shouldShowDelete"
+          show-reorder="shouldShowReorder"
+          can-swipe="listCanSwipe">
+          	<div ng-repeat="event in events">
+	        	<ion-item class="item item-stable" ng-click="toggleItem(event)" ng-class="{active: isItemShown(event)}">
+	        		<div style="float:left">
+	        		<h2>Name: {{event.name}}</h2>
+			    	</div>
+			    	<div style="float:right;">
+			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(event) ? 'ion-minus' : 'ion-plus'"></i>
+			    	</div>
+			    	<br>
+			    	<div class="item-accordion" ng-show="isItemShown(event)">
+				    	<p>If: {{event.if}}</p>
+			            <p>Then: {{event.then}}</p>
+			            <p>Repeat: {{event.repeat}}</p>
+			            <p>Period: {{event.period}}</p>
+			    	</div>
+			    </ion-item>
+			</div>
+        </ion-list>
+    </ion-content>
 </ion-view>

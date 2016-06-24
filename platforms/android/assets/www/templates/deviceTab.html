@@ -1,11 +1,59 @@
 <ion-view title="DeviceTab" id="page2">
+	<ion-nav-buttons side="right">
+    	<a style="color: black;" class="button button-icon icon ion-plus" ng-click="onNFCClick()"></a> 
+	</ion-nav-buttons>
     <ion-content padding="true" class="has-header">
+    	<ion-refresher
+		    pulling-text="Pull to refresh..."
+		    on-refresh="doRefresh()">
+		</ion-refresher>
         <ion-list show-delete="shouldShowDelete"
           show-reorder="shouldShowReorder"
           can-swipe="listCanSwipe">
-        	<ion-item ng-repeat="task in tasks" class="item-thumbnail-left">
-		    	<p>{{task.title}}</p>
-		    </ion-item>
+          	<div ng-repeat="device in devices">
+	        	<ion-item class="item item-thumbnail-left" ng-click="toggleItem(device)" ng-class="{active: isItemShown(device)}">
+	        		<div style="float:left">
+	        		<h2>Name: {{device.name}}</h2>
+			    	<p>Description: {{device.description}}</p>
+			    	<p>Protocol: {{device.protocol}}</p>
+			    	<p>Type: {{device.type}}</p>
+			    	<p>Owner: {{device.owner}}</p>
+			    	<p>Group: {{device.group}}</p>
+			    	</div>
+			    	<div style="float:right;">
+			    	<i style="vertical-align: text-bottom;" class="icon" ng-class="isItemShown(device) ? 'ion-minus' : 'ion-plus'"></i>
+			    	</div>
+			    	<ion-option-button class="button-positive"
+			    		ng-show="isAdmin()"
+		            	ng-click="onOwnerClick(device)">
+		            	Set Owner
+		            </ion-option-button>
+		            <ion-option-button class="button-assertive"
+			    		ng-show="isAdmin()"
+		            	ng-click="onGroupClick(device)">
+		            	Set Group
+		            </ion-option-button>
+			    </ion-item>
+			    <ion-item class="item-accordion"
+                    ng-repeat="channel in device.channels"
+                    ng-show="isItemShown(device)">
+		            <h2>Topic: {{channel.topic}}</h2>
+		            <p>Description: {{channel.description}}</p>
+		            <p>Mode: {{channel.mode}}</p>
+		            <p>Type: {{channel.type}}</p>
+		            <p>Value: {{channel.value}}</p>
+		            <ion-option-button class="button-positive"
+		            	ng-show="channel.mode.indexOf('w') > -1"
+		            	ng-click="onWriteClick(channel)">
+		            	Write
+		            </ion-option-button>
+    				<ion-option-button class="button-assertive"
+    					ng-show="channel.mode.indexOf('r') > -1"
+    					ng-click="onReadClick(channel)">
+    					Read
+    				</ion-option-button>
+		        </ion-item>
+			</div>
         </ion-list>
     </ion-content>
 </ion-view>

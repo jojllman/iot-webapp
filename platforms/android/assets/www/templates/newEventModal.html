@@ -1,0 +1,143 @@
+<div class="modal" ng-controller="newEventCtrl">
+
+      <header class="bar bar-header bar-positive">
+        <h1 class="title">New event</h1>
+        <button class="button button-clear" ng-click="closeModal()">Cancel</button>
+      </header>
+
+      <ion-content has-header="true" 
+        has-subheader="false"
+        has-footer="false"
+        overflow-scroll="true"
+        scroll="true"
+        padding="true">
+
+        <div class="spacer" style="height: 40px;"></div>
+        <div class="list">
+	          <label class="item item-divider item-stacked-label">
+	            <span class="input-label">If:</span>
+	            <ion-list delegate-handle="ifList"
+	            	show-delete="true"
+		          show-reorder="false"
+		          can-swipe="true">
+		          <ion-item class="item" ng-repeat="condition in conditions">
+		          	{{condition.device.name + '.' + condition.channel.topic + condition.operator + condition.value}}
+		          </ion-item>
+		        </ion-list>
+	          </label>
+	          <div class="list list-inset">
+		          <label class="item item-input item-select">
+				    <div class="input-label">
+				      Device:
+				    </div>
+				    <select ng-options="device as device.name for device in devices" ng-model="selectedIfDevice">
+				    </select>
+				  </label>
+		          <label class="item item-input item-select">
+				    <div class="input-label">
+				      Channel:
+				    </div>
+				    <select ng-options="channel as channel.topic for channel in selectedIfDevice.channels" ng-model="selectedIfChannel">
+				    </select>
+				  </label>
+				  <label class="item item-input item-select">
+				    <div class="input-label">
+				      Operator:
+				    </div>
+				    <select ng-model="selectedIfOperator">
+				      <option>></option>
+				      <option>>=</option>
+				      <option><</option>
+				      <option><=</option>
+				      <option>==</option>
+				      <option>!=</option>
+				    </select>
+				  </label>
+				  <label class="item item-input">
+				    <div class="input-label">
+				      Value:
+				    </div>
+				    <input type="text" placeholder="Type here" ng-model="IfInput">
+				  </label>
+				  <div class="wrapper" style="text-align: center;">
+		          	<button class="button button-balanced" ng-click="addIfCondition(selectedIfDevice, selectedIfChannel, selectedIfOperator, IfInput);">Add</button>
+		          </div>
+			  </div>
+	          <label class="item item-divider item-stacked-label">
+	            <span class="input-label">Then:</span>
+	            <ion-list delegate-handle="thenList"
+	            	show-delete="true"
+		          show-reorder="false"
+		          can-swipe="true">
+		          <ion-item class="item" ng-repeat="exec in execs">
+		          	{{exec.device.name + '.' + exec.channel.topic + exec.operator + exec.value}}
+		          </ion-item>
+		        </ion-list>
+	          </label>
+	          <div class="list list-inset">
+		          <label class="item item-input item-select">
+				    <div class="input-label">
+				      Device:
+				    </div>
+				    <select ng-options="device as device.name for device in devices" ng-model="selectedThenDevice" ng-change="onThenDeviceChange(selectedThenDevice)">
+				    </select>
+				  </label>
+		          <label class="item item-input item-select">
+				    <div class="input-label">
+				      Channel:
+				    </div>
+				    <select ng-options="channel as channel.topic for channel in selectedThenDevice.channels" ng-model="selectedThenChannel">
+				    </select>
+				  </label>
+				  <label class="item item-input item-select">
+				    <div class="input-label">
+				      Operator:
+				    </div>
+				    <select ng-model="selectedThenOperator">
+				      <option>=</option>
+				    </select>
+				  </label>
+				  <label class="item item-input">
+				    <div class="input-label">
+				      Value:
+				    </div>
+				    <input type="text" placeholder="Type here" ng-model="ThenInput">
+				  </label>
+				  <div class="wrapper" style="text-align: center;">
+		          	<button class="button button-balanced" ng-click="addThenCondition(selectedThenDevice, selectedThenChannel, selectedThenOperator, ThenInput);">Add</button>
+		          </div>
+			  </div>
+			  <label class="item item-input">
+				    <div class="input-label">
+				      Event name:
+				    </div>
+				    <input type="text" placeholder="Type here" ng-model="eventNameInput">
+				</label>
+				<label class="item item-input">
+					<div class="input-label">
+				      Repeat:
+				    </div>
+					<label class="toggle" style="float:right">
+					   <input type="checkbox" ng-model="eventRepeat">
+					   <div class="track">
+					     <div class="handle"></div>
+					   </div>
+					</label>
+				</label>
+				<label class="item item-input">
+					<div class="input-label">
+				      Period:
+				    </div>
+				    <input type="text" placeholder="Time in milliseconds, >100ms" ng-model="eventPeriod">
+				</label>
+			  <label class="item item-divider item-stacked-label">
+				  <div class="wrapper" style="text-align: center;">
+			          <button class="button button-balanced" ng-click="createEvent(eventNameInput, eventRepeat, eventPeriod);">Create</button>
+			      </div>
+		      </label>
+        </div>        
+        
+
+      </ion-content>
+
+    </div>

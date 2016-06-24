@@ -25,6 +25,20 @@
       .manual-remove-top-padding .scroll{
         padding-top:0px !important;
       }
+
+      .list .item.item-accordion {
+        line-height: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: 0.09s all linear;
+      }
+      .list .item.item-accordion.ng-hide {
+        line-height: 0px;
+      }
+      .list .item.item-accordion.ng-hide-add,
+      .list .item.item-accordion.ng-hide-remove {
+        display: block !important;
+      }
     </style>
 
     <script src="js/app.js"></script>
@@ -32,6 +46,7 @@
     <script src="js/routes.js"></script>
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 
     <!-- Only required for Tab projects w/ pages in multiple tabs 
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>

@@ -6,6 +6,11 @@ module.exports = [
         "clobbers": [
             "device"
         ]
+    },
+    {
+        "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
+        "id": "phonegap-nfc.NFC",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -13,7 +18,8 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-device": "1.1.2",
-    "cordova-plugin-console": "1.0.3"
+    "cordova-plugin-console": "1.0.3",
+    "phonegap-nfc": "0.6.6"
 };
 // BOTTOM OF METADATA
 });
